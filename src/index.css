@@ -12,6 +12,8 @@
   --color-blue-50: #839cb5;
   --color-blue-100: #2d2d38;
   --color-zinc-900: #18181b;
+
+ 
 }
 
 html,
@@ -658,7 +660,7 @@ section {
       left: 2.5rem;
     }
   }
-  @media (min-width: 1280px) {
+  @media (min-width: 990px) {
     .timeline-wrapper {
       left: 35.5vw;
     }
@@ -718,6 +720,11 @@ section {
     z-index: 20;
   }
 
+  .tech-card {
+    position: relative; /* This is crucial for absolute positioning of the bg */
+    overflow: hidden; /* This was in your original classes */
+}
+
   .tech-card-animated-bg {
     position: absolute;
     left: 0;
@@ -739,7 +746,7 @@ section {
     align-items: center;
     overflow: hidden;
     position: relative;
-    z-index: 10;
+    z-index: 2;
   }
   @media (min-width: 768px) {
     .tech-card-content {
@@ -1057,3 +1064,4 @@ section {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-10px); }
 }
+

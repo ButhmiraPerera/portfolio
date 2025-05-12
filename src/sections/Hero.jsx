@@ -24,16 +24,16 @@ const Hero = () => {
     })
 
     return(
-        <section id='hero' className='[position:relative] [overflow:hidden]'>
-            <div className='absolute top-0 left-0 z-10'>
+        <section id='hero' className='[position:relative] [overflow:hidden] [padding-left:5%] md:[padding-left:10%]'>
+            <div className='absolute top-0 left-0  z-10'>
                 <img src="/images/bg.png" alt="background" />
             </div>
 
             <div className='hero-layout'>
                 {/*LEFT: HERO CONTENT*/}
-                <header className='[display:flex] [flex-direction:column] [justify-content:center] md:[width:100%] [width:100vw] md:[padding:0_5rem] [padding:0_1.25rem]'>
+                <header className='[display:flex] [flex-direction:column] [justify-content:center] md:[width:100%] [width:100dvw] md:[padding:0_5rem] [padding:0_1.25rem]'>
                     <div className='[display:flex] [flex-direction:column] [gap:1.75rem]'>
-                        <div className='hero-text'>
+                        <div className='hero-text '>
                             <h1>Shaping 
                                 <span className='slide'>
                                     <span className='wrapper'>
@@ -53,7 +53,7 @@ const Hero = () => {
                             <h1>that Deliver Results</h1>
                         </div>
                         
-                        <p className='text-white-50 md:[font-size:1.25rem] [position:relative] [z-index:10] [pointer-events:none] [padding-top:1.5rem] [padding-right:1.5rem] [padding-bottom:1.5rem]'>
+                        <p className='[color:var(--color-white-50)] md:[font-size:1.25rem] [position:relative] [z-index:10] [pointer-events:none] [padding-top:1.5rem] [padding-right:1.5rem] [padding-bottom:1.5rem]'>
                             Hi, I'm Buthmira, a developer with a passion for coding.
                             </p>
                             <Button className="md:[width:20rem] md:[height:4rem] [width:15rem] [height:3rem]" id="button" text="See my Work" />
